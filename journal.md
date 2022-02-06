@@ -1,1 +1,1 @@
-
+I have added a large enough dataset containing important drought information on the United States from February 2016 until February 2022. This will serve as the primary dataset unless another one is found that I deem to be better, and I will do my initial tests on the csv file in /src.

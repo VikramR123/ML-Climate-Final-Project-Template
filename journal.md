@@ -1,1 +1,4 @@
-I have added a large enough dataset containing important drought information on the United States from February 2016 until February 2022. This will serve as the primary dataset unless another one is found that I deem to be better, and I will do my initial tests on the csv file in /src.
+I have added a large enough dataset containing important drought information on the United States from February 2016 until February 2022. This will serve as the primary dataset unless another one is found that I deem to be better, and I will do my initial tests on the csv file in /src. 
+
+
+Now looking for bigger and more decipherable dataset to fit the model to. My model will need to fit the data and ideally output a classification for what severity of drought the data point is in, ranging through 5 categories from 'severe drought' to 'no drought'. I am considering logistic regression and/or stochastic gradient descent to fit the model, but I will need to play with this and start running some tests.

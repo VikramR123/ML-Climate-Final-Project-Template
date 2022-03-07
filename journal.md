@@ -8,3 +8,7 @@ Feb. 19 - I have found a nice dataset here: https://www.ncdc.noaa.gov/cag/county
 
 
 Feb. 28 - I found a machine learning Python package that helps with KMeans clustering. I have added a test Python file in /src that will test out this functionality before applying it to my dataset and observing the patterns. 
+
+## 2022-03-07 check in: alp
+
+Overall good progress. I would make sure that you focus on the setup of your analysis (feel free to run by me and Nicolas). Then I would encourage you to get some sort of preliminary result sooner than later. This can serve as a good basis for the rest of your activities.

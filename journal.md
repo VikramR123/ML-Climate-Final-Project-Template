@@ -13,5 +13,12 @@ Feb. 28 - I found a machine learning Python package that helps with KMeans clust
 March 15 - Decided to try alternative seasonal forecasting method: Facebook's Prophet: https://facebook.github.io/prophet/. Have added python file testing this out and will analyze results. Also found this resource: https://stackoverflow.com/questions/19790790/splitting-dataframe-into-multiple-dataframes to split into many dataframes based on column value, which I need to use to separate the different dataframes for each California county. Need to think of a nice way to display the data on maybe a CA map.
 
 
+March 31 - Tried 'logistic' growth model in Prophet, but was not better. Now am plotting the rolling mean and rolling std deviation of the data, alongside the predictions. Will use these to evaluate the prediction and see what level of danger of drought it implies. Once finished with this, will have to write code to do this for all counties in the dataset and neatly store it in a dictionary. 
+
+https://www.google.com/search?q=what+forecasting+model+does+prophet+use&oq=what+forecasting+model+does+prophet+use&aqs=chrome..69i57.5323j0j7&sourceid=chrome&ie=UTF-8 - what model Prophet uses
+
+https://www.drought.gov/what-is-drought/monitoring-drought#:~:text=Drought%20indicators%20describe%20drought%20conditions,%2C%20soil%20moisture%2C%20and%20snowpack. - Factors to drought
+
+
 
 python3 -u "/Users/user/Downloads/ML-Climate-Final-Project-Template/src/prophetTest.py"

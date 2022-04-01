@@ -13,7 +13,7 @@ from statsmodels.tsa.holtwinters import ExponentialSmoothing as HWES
 x = []
 y = []
  
-with open('src/test.csv') as file_obj:
+with open('src/alameda.csv') as file_obj:
     reader_obj = csv.reader(file_obj)
     for row in reader_obj:
         #print(row[3])
@@ -46,7 +46,18 @@ print(km.labels_.shape)
 
 #print(km.labels_)
 
+
+
 # Plotting
+
+x_train = x[:-12]
+x_test = x[-12:]
+y_train = y[:-12]
+y_test = y[-12:]
+
+
+
+
 plt.title("Line graph")
 plt.xlabel("X axis")
 plt.ylabel("Y axis")
@@ -54,7 +65,7 @@ plt.ylabel("Y axis")
 # plt.plot(x, y, color="red")
 
 # Rolling mean
-d = {'date': x, 'rain': y}
+d = {'date': x_train, 'rain': y_train}
 df = pd.DataFrame(data=d)
 # print(df.rain)
 plt.plot(df.date, df.rain, color="red")
@@ -65,7 +76,7 @@ plt.plot(df.date, df.rain.rolling(window=60).mean(), color="blue")
 
 
 # Exponential Smoothing model for times series forecast/regression
-model = HWES(df.rain, seasonal_periods=12, trend='add', seasonal='add')
+model = HWES(df.rain, seasonal_periods=12, seasonal='add')
 fitted = model.fit(optimized=True, use_brute=True)
 
 #print out the training summary
@@ -73,10 +84,9 @@ print(fitted.summary())
 
 #create an out of sample forcast for the next 12 steps beyond the final data point in the training data set
 sales_forecast = fitted.forecast(steps=12)
-new_dates = list(range(202201, 202212))
-new_dates.append(202301)
 
-plt.plot(new_dates, sales_forecast, color="orange")
+plt.plot(x_test, y_test, color="purple")
+plt.plot(x_test, sales_forecast, color="orange")
 
 # Labels from model
 #plt.plot(x, km.labels_, color="blue")

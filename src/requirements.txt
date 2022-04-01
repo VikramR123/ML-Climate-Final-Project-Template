@@ -1,0 +1,21 @@
+sudo python3 -m pip install tslearn
+sudo python3 -m pip install pandas
+sudo python3 -m pip install numpy == 1.21
+sudo python3 -m pip install statsmodels
+matplotlib
+
+
+# Facebook Prophet
+sudo python3 -m pip install pystan==2.19.1.1
+sudo python3 -m pip install prophet
+
+# Not necessary
+sudo python3 -m pip install plotly
+
+# Maybe
+pip install --upgrade plotly
+
+
+
+
+https://timeseriesreasoning.com/contents/holt-winters-exponential-smoothing/ HWES 

@@ -10,9 +10,8 @@ Feb. 19 - I have found a nice dataset here: https://www.ncdc.noaa.gov/cag/county
 Feb. 28 - I found a machine learning Python package that helps with KMeans clustering. I have added a test Python file in /src that will test out this functionality before applying it to my dataset and observing the patterns. 
 
 
+March 15 - Decided to try alternative seasonal forecasting method: Facebook's Prophet: https://facebook.github.io/prophet/. Have added python file testing this out and will analyze results. Also found this resource: https://stackoverflow.com/questions/19790790/splitting-dataframe-into-multiple-dataframes to split into many dataframes based on column value, which I need to use to separate the different dataframes for each California county. Need to think of a nice way to display the data on maybe a CA map.
 
-sudo python3 -m pip install tslearn
-sudo python3 -m pip install pandas
-sudo python3 -m pip install numpy == 1.21
-sudo python3 -m pip install statsmodels
-matplotlib
+
+
+python3 -u "/Users/user/Downloads/ML-Climate-Final-Project-Template/src/prophetTest.py"

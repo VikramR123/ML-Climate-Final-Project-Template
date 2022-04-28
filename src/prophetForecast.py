@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 def prophetForecast(df):
     # Optional parser lambda to parse months
-    # df = pd.read_csv('src/tulare.csv', parse_dates=['Date'], date_parser=lambda x:pd.to_datetime(x, format='%Y%m'))
+    # df = pd.read_csv('src/alameda.csv', parse_dates=['Date'], date_parser=lambda x:pd.to_datetime(x, format='%Y%m'))
 
 
     df1 = df[['Date', 'Value']]
@@ -40,15 +40,10 @@ def prophetForecast(df):
         # If negative: actual vals were higher, so less risk
         # If positive: actual vals were lower than predicted, so higher risk
 
-    
-    return(diff)
-
-
-
     # fig1 = m.plot(forecast)
 
     # # Rolling mean
-    # plt.plot(df1.ds, df1.y.rolling(window=6).mean(), color="red")
+    plt.plot(df1.ds, df1.y.rolling(window=6).mean(), color="red")
     # # Rolling stddev
     # plt.plot(df1.ds, rolling_means.rolling(window=6).std(), label="rolling std (x10)", color="green")
 
@@ -57,6 +52,8 @@ def prophetForecast(df):
     # fig2 = m.plot_components(forecast)
 
     # plt.show()
+
+    return(diff)
 
 
 

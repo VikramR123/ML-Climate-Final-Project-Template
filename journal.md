@@ -16,14 +16,18 @@ March 15 - Decided to try alternative seasonal forecasting method: Facebook's Pr
 March 31 - Have completed model, and have added code to run the model automatically for all counties in CA and generate a score, which is the predicted - actual precipitation values for the last 6 months. This score is used in the newest code I wrote to generate a choropleth map of California, color-coding which counties have the highest likelihood of drought. All the coding is done, and I just have to finish the abstract, and start work on the final paper and video. 
 
 
-
-Resources for final paper:
-
+April 10 - Changed up settings for choropleth map, experimented with other packages to show more information when you hover over a county. Also tuned some paramters for the forecasting model based off some validation datasets. Also have some links to resorces I want to add in the final paper:
 
 https://www.google.com/search?q=what+forecasting+model+does+prophet+use&oq=what+forecasting+model+does+prophet+use&aqs=chrome..69i57.5323j0j7&sourceid=chrome&ie=UTF-8 - what model Prophet uses
 
 https://www.drought.gov/what-is-drought/monitoring-drought#:~:text=Drought%20indicators%20describe%20drought%20conditions,%2C%20soil%20moisture%2C%20and%20snowpack. - Factors to drought
 
 
+April 19 - Stated writing the paper. I have found it more convenient to work on the LaTeX template on Overleaf, and then once I am done I will move it over to the /doc folder. Also just some notes about the code in /src: HotsWinterES.py was my original attempt. To run my model, call prophetForecast.py and then use the dictionary outputted by this and call PlotCA.py to create the choropleth map. I also have finalized my abstract. 
 
-python3 -u "/Users/user/Downloads/ML-Climate-Final-Project-Template/src/prophetForecast.py"
+
+
+
+
+
+

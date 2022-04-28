@@ -81,9 +81,10 @@ df = pd.merge(df1, df2, on="County", how="inner")
 import plotly.express as px
 
 fig = px.choropleth(df, geojson=counties, locations='FIPS', color='Score',
-                           color_continuous_scale="ylorrd",
+                           color_continuous_scale="ylorrd", #ylorrd
                            range_color=(-10, 10),
                            scope="usa",
+                           hover_name="County",
                            labels={'Score':'Predicted - Actual Precipitation in Last 6 Months'}
                           )
 # fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})

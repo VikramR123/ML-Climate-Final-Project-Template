@@ -26,6 +26,9 @@ https://www.drought.gov/what-is-drought/monitoring-drought#:~:text=Drought%20ind
 April 19 - Stated writing the paper. I have found it more convenient to work on the LaTeX template on Overleaf, and then once I am done I will move it over to the /doc folder. Also just some notes about the code in /src: HotsWinterES.py was my original attempt. To run my model, call prophetForecast.py and then use the dictionary outputted by this and call PlotCA.py to create the choropleth map. I also have finalized my abstract. 
 
 
+April 29 - Final step done: Finished final paper and have added everything needed for the LaTeX paper into the /Doc folder, and this should be the final push. 
+
+
 
 
 
